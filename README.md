@@ -1,8 +1,8 @@
-ShieldAI
+### ShieldAI
 an AI-powered browser privacy layer that detects sensitive information in text and files, masks or encrypts it locally, and prevents accidental data leaks before anything is shared online.
 
 
-Team Name: COGNIVEX
+### Team Name: COGNIVEX
 
 Member	Contribution
 
@@ -15,7 +15,7 @@ KAVISH RAHAV D P: UI/UX, risk meter, and user interaction flow.
 SIVA PRASANTHAM K: File-upload protection, testing, integration, and presentation.
 
 Problem Statement
-The Problem:
+### The Problem:
 Students and professionals frequently paste or upload sensitive information—such as phone numbers, resumes, credentials, API keys, and confidential documents—into AI chatbots, websites, forms, and other online platforms.
 
 Most users do not realize that pasting or uploading is a form of data sharing. Once the information leaves their device, they may lose control over it. Existing enterprise Data Loss Prevention (DLP) tools are generally designed for organizations rather than individual users.
@@ -23,14 +23,14 @@ Most users do not realize that pasting or uploading is a form of data sharing. O
 Why We Chose This Problem
 Accidental data exposure is an everyday problem that can happen with a single paste or upload. We chose this problem because individuals need a simple, real-time privacy layer that protects sensitive information before it leaves their browser, without requiring technical knowledge or complex security software.
 
-Solution:
+### Solution:
 
 PasteShield is a browser extension that acts as an on-device privacy layer between the user and the websites they use.
 
 It detects sensitive information in text and uploaded files, identifies the risk, and gives the user the option to mask, encrypt, upload as is, or cancel before the data is shared.
 
 All detection and masking happen locally on the user's device, so the original sensitive data is not sent to PasteShield's servers.
-Key Features
+### Key Features
 Sensitive Data Detection: Detects Aadhaar, PAN, UPI IDs, phone numbers, emails, API keys, passwords, and other sensitive information using AI and rule-based detection.
 
 Reversible Text Masking: Replaces sensitive values with placeholders before sending text to AI tools while maintaining the context needed for useful responses.
@@ -43,7 +43,7 @@ Regional Language Support: Handles English, Tamil, Hindi, and mixed-language/Tan
 
 Local Privacy Log: Keeps a private record of masking actions without sending the data to a server.
 
-Innovation and Differentiation
+### Innovation and Differentiation
 
 PasteShield moves privacy protection from **after-the-leak detection to before-the-leak prevention**. Instead of asking users to manually remove sensitive information, it automatically detects sensitive data at the point where it is about to leave the browser.
 
@@ -56,7 +56,7 @@ Unlike conventional enterprise DLP tools, PasteShield is designed for **individu
 * **User-controlled protection:** Users can choose to mask, encrypt, upload as is, or cancel.
 * **Multi-purpose architecture:** The same masking engine can later be extended to email, document sharing, screen sharing, and printing workflows.
 
-Technical Implementation
+### Technical Implementation
 
 Architecture
 
@@ -119,7 +119,7 @@ flowchart LR
 7. **Context Preservation:** For text prompts, sensitive values are replaced with unique placeholders so the AI can understand the surrounding context.
 8. **Response Handling:** When applicable, placeholders in the AI response can be mapped back to the original values locally.
 9. **Local Logging:** Masking and security actions are recorded locally on the user's device. No sensitive content is sent to a PasteShield server.
-Technical Decisions
+### Technical Decisions
 Browser Extension Architecture: We chose a browser extension because PasteShield must protect data at the point where users paste or upload it.
 Local-First Processing: Sensitive data is processed on the user's device wherever possible, reducing the need to transmit private information to external servers.
 Hybrid Detection: Rule-based patterns are used for structured identifiers such as Aadhaar, PAN, phone numbers, emails, and API keys, while AI/NLP detection is used for context-dependent sensitive information.
@@ -156,7 +156,7 @@ Paste sensitive text → Detect → Show risk → Mask → Send protected text
 
 No real Aadhaar, PAN, passwords, API keys, or other sensitive personal information should be used during demonstrations.
 
-Demo Video
+### Demo Video
 
 https://youtu.be/bXbRqXOCgpU
 
@@ -167,7 +167,7 @@ Git.
 
 
 Installation
-git clone [repository-url]
+git clone 
 
 Usage
 Install and enable the PasteShield extension.
