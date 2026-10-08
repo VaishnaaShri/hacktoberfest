@@ -114,4 +114,11 @@ flowchart LR
 7. **Context Preservation:** For text prompts, sensitive values are replaced with unique placeholders so the AI can understand the surrounding context.
 8. **Response Handling:** When applicable, placeholders in the AI response can be mapped back to the original values locally.
 9. **Local Logging:** Masking and security actions are recorded locally on the user's device. No sensitive content is sent to a PasteShield server.
-
+Technical Decisions
+Browser Extension Architecture: We chose a browser extension because PasteShield must protect data at the point where users paste or upload it.
+Local-First Processing: Sensitive data is processed on the user's device wherever possible, reducing the need to transmit private information to external servers.
+Hybrid Detection: Rule-based patterns are used for structured identifiers such as Aadhaar, PAN, phone numbers, emails, and API keys, while AI/NLP detection is used for context-dependent sensitive information.
+Reversible Masking: Sensitive values are replaced with unique placeholders so the surrounding context is preserved and the original values can be mapped locally when required.
+User-Controlled Actions: Instead of automatically blocking every upload, the system allows users to choose between masking, encryption, uploading as-is, or cancelling.
+Minimal Infrastructure: The MVP avoids an unnecessary backend and database so that sensitive information does not need to leave the user's device.
+Implementation During the Hackathon
