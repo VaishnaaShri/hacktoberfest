@@ -2,7 +2,6 @@ ShieldAI
 an AI-powered browser privacy layer that detects sensitive information in text and files, masks or encrypts it locally, and prevents accidental data leaks before anything is shared online.
 
 
-Team
 Team Name: COGNIVEX
 
 Member	Contribution
@@ -17,7 +16,7 @@ SIVA PRASANTHAM K	[Contribution]
 
 Problem Statement
 The Problem:
-Students and professionals frequently paste or upload sensitive information—such as Aadhaar/PAN details, phone numbers, resumes, credentials, API keys, and confidential documents—into AI chatbots, websites, forms, and other online platforms.
+Students and professionals frequently paste or upload sensitive information—such as phone numbers, resumes, credentials, API keys, and confidential documents—into AI chatbots, websites, forms, and other online platforms.
 
 Most users do not realize that pasting or uploading is a form of data sharing. Once the information leaves their device, they may lose control over it. Existing enterprise Data Loss Prevention (DLP) tools are generally designed for organizations rather than individual users.
 
