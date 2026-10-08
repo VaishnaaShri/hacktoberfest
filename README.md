@@ -147,6 +147,7 @@ KAVISH RAHAV D P: UI/UX, risk meter, and user interaction flow.
 SIVA PRASANTHAM K: File-upload protection, testing, integration, and presentation.
 
 Working Application
+
 The application can be accessed through the provided link where applicable. Users can test the core workflow by entering or pasting sample sensitive information into a supported webpage and observing PasteShield detect and mask the information before submission.
 
 For the hackathon MVP, the recommended demonstration flow is:
@@ -158,3 +159,40 @@ No real Aadhaar, PAN, passwords, API keys, or other sensitive personal informati
 Demo Video
 
 https://youtu.be/bXbRqXOCgpU
+
+Setup and Usage
+Prerequisites
+Google Chrome or another Chromium-based browser.
+Git.
+
+
+Installation
+git clone [repository-url]
+
+Usage
+Install and enable the PasteShield extension.
+
+Open a supported website or AI chatbot.
+
+Paste sample text containing sensitive information.
+
+PasteShield scans the content locally.
+
+Review the detected information and risk level.
+
+Choose Mask, Upload As Is, or Cancel.
+
+For supported file uploads, select a sample document and review the protection options.
+
+Continue only after reviewing the detected risks.
+
+Devpost Submission
+
+Devpost Project: https://dev.to/vaishnaa_shri_/shieldai-7eb-temp-slug-3854045/edit
+
+Credits and License
+Credits
+
+License
+
+
