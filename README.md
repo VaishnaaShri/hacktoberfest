@@ -16,21 +16,24 @@ SIVA PRASANTHAM K	[Contribution]
 
 Problem Statement
 The Problem:
-Students regularly share sensitive documents such as Aadhaar, marksheets, PAN cards, and ID photos with xerox shops through WhatsApp, email, or USB drives. These files may remain on shop computers even after printing, creating a risk of data leakage, misuse, and identity theft
+Students and professionals frequently paste or upload sensitive information—such as Aadhaar/PAN details, phone numbers, resumes, credentials, API keys, and confidential documents—into AI chatbots, websites, forms, and other online platforms.
+
+Most users do not realize that pasting or uploading is a form of data sharing. Once the information leaves their device, they may lose control over it. Existing enterprise Data Loss Prevention (DLP) tools are generally designed for organizations rather than individual users.
 
 Why We Chose This Problem
-We chose this problem because it is common, relatable, and often overlooked. Students need a simple and secure way to print sensitive documents without losing control of their personal data. Our solution addresses this everyday privacy gap using AI and cybersecurity.
+Accidental data exposure is an everyday problem that can happen with a single paste or upload. We chose this problem because individuals need a simple, real-time privacy layer that protects sensitive information before it leaves their browser, without requiring technical knowledge or complex security software.
 
 Solution:
 
-PrintLeak Shield is a privacy-focused digital printing system that allows students to send sensitive documents to a Xerox shop without sharing them through WhatsApp, email, or USB drives. The document is temporarily made available to the shop for printing, while Gemma 4 analyzes the document and recommends masking unnecessary sensitive information. After printing, the temporary shop-side access is revoked and the application removes its temporary copy, while the student receives a deletion receipt.
+PasteShield is a browser extension that acts as an on-device privacy layer between the user and the websites they use.
 
+It detects sensitive information in text and uploaded files, identifies the risk, and gives the user the option to mask, encrypt, upload as is, or cancel before the data is shared.
+
+All detection and masking happen locally on the user's device, so the original sensitive data is not sent to PasteShield's servers.
 Key Features
-AI-Powered Privacy Analysis:
-Gemma 4 identifies the document type and sensitive information such as Aadhaar numbers, personal details, and marks, and suggests masking unnecessary data before printing.
-One-Time Print Access:
-The student receives a temporary print access code that allows the shop owner to access the document for printing without needing WhatsApp, USB, QR scanners, or special hardware.
-Temporary & Controlled Document Access:
-The shop can access the document only for the printing process. Download/save options are not provided by the application, and access is revoked after printing.
-Automatic Deletion & Deletion Receipt:
-After printing, the application's temporary copy is deleted and the print access is invalidated. The student receives a receipt confirming that the temporary digital copy has been removed.
+Sensitive Data Detection: Detects Aadhaar, PAN, UPI IDs, phone numbers, emails, API keys, passwords, and other sensitive information using AI and rule-based detection.
+Reversible Text Masking: Replaces sensitive values with placeholders before sending text to AI tools while maintaining the context needed for useful responses.
+Upload Guard: Scans files locally before upload and provides options to mask, encrypt, upload as is, or cancel.
+Risk Meter: Clearly shows what sensitive information has been detected and its risk level.
+Regional Language Support: Handles English, Tamil, Hindi, and mixed-language/Tanglish text.
+Local Privacy Log: Keeps a private record of masking actions without sending the data to a server.
