@@ -96,11 +96,11 @@ flowchart LR
 
 | **Category**    | **Technologies**                                           |
 | --------------- | ---------------------------------------------------------- |
-| Frontend        | HTML, CSS, JavaScript, Browser Extension APIs              |
+| Frontend        | N/A                                                        |
 | Backend         | N/A                                                        |
-| Database        | Browser Local Storage / IndexedDB                          |
-| AI / ML         | Lightweight local NLP model + rule-based pattern detection |
-| Infrastructure  | Browser / User Device                                      |
+| Database        | N/A                                                        |
+| AI / ML         |  |
+| Infrastructure  | Chrome/Browser extension                                   |
 | APIs / Services | Browser Extension APIs; N/A for external cloud APIs        |
 
 ### How It Works
