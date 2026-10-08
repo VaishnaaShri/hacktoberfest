@@ -122,3 +122,22 @@ Reversible Masking: Sensitive values are replaced with unique placeholders so th
 User-Controlled Actions: Instead of automatically blocking every upload, the system allows users to choose between masking, encryption, uploading as-is, or cancelling.
 Minimal Infrastructure: The MVP avoids an unnecessary backend and database so that sensitive information does not need to leave the user's device.
 Implementation During the Hackathon
+The major components implemented were:
+
+Browser extension interface and core workflow.
+Detection of sensitive text during paste/input.
+Rule-based detection for common Indian identifiers and credentials.
+Local risk analysis and risk indicator.
+Automatic replacement of detected information with placeholders.
+File-upload interception and local scanning workflow.
+User options to mask, upload as-is, or cancel.
+Local privacy activity logging.
+Demonstration workflow using AI chat and common web forms.
+
+Note: Features not completed in the final MVP should be marked as "Planned" rather than presented as implemented.
+
+Team Contributions
+[Member 1]: Browser extension development and input interception.
+[Member 2]: Sensitive-data detection, masking logic, and validation.
+[Member 3]: UI/UX, risk meter, and user interaction flow.
+[Member 4]: File-upload protection, testing, integration, and presentation.
