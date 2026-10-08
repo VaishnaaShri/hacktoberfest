@@ -6,13 +6,13 @@ Team Name: COGNIVEX
 
 Member	Contribution
 
-VAISHNAA SHRI.P	[Contribution]
+VAISHNAA SHRI.P	:Browser extension development and input interception.
 
-RATCHITHA KATHIRAVAN VEDHAVALLI	[Contribution]
+RATCHITHA KATHIRAVAN VEDHAVALLI: Sensitive-data detection, masking logic, and validation.
 
-KAVISH RAHAV D P	[Contribution]
+KAVISH RAHAV D P: UI/UX, risk meter, and user interaction flow.
 
-SIVA PRASANTHAM K	[Contribution]
+SIVA PRASANTHAM K: File-upload protection, testing, integration, and presentation.
 
 Problem Statement
 The Problem:
@@ -32,10 +32,15 @@ It detects sensitive information in text and uploaded files, identifies the risk
 All detection and masking happen locally on the user's device, so the original sensitive data is not sent to PasteShield's servers.
 Key Features
 Sensitive Data Detection: Detects Aadhaar, PAN, UPI IDs, phone numbers, emails, API keys, passwords, and other sensitive information using AI and rule-based detection.
+
 Reversible Text Masking: Replaces sensitive values with placeholders before sending text to AI tools while maintaining the context needed for useful responses.
+
 Upload Guard: Scans files locally before upload and provides options to mask, encrypt, upload as is, or cancel.
+
 Risk Meter: Clearly shows what sensitive information has been detected and its risk level.
+
 Regional Language Support: Handles English, Tamil, Hindi, and mixed-language/Tanglish text.
+
 Local Privacy Log: Keeps a private record of masking actions without sending the data to a server.
 
 Innovation and Differentiation
@@ -134,10 +139,21 @@ User options to mask, upload as-is, or cancel.
 Local privacy activity logging.
 Demonstration workflow using AI chat and common web forms.
 
-Note: Features not completed in the final MVP should be marked as "Planned" rather than presented as implemented.
 
 Team Contributions
-[Member 1]: Browser extension development and input interception.
-[Member 2]: Sensitive-data detection, masking logic, and validation.
-[Member 3]: UI/UX, risk meter, and user interaction flow.
-[Member 4]: File-upload protection, testing, integration, and presentation.
+VAISHNAA SHRI.P: Browser extension development and input interception.
+RATCHITHA KATHIRAVAN VEDHAVALLI: Sensitive-data detection, masking logic, and validation.
+KAVISH RAHAV D P: UI/UX, risk meter, and user interaction flow.
+SIVA PRASANTHAM K: File-upload protection, testing, integration, and presentation.
+
+Working Application
+The application can be accessed through the provided link where applicable. Users can test the core workflow by entering or pasting sample sensitive information into a supported webpage and observing PasteShield detect and mask the information before submission.
+
+For the hackathon MVP, the recommended demonstration flow is:
+
+Paste sensitive text → Detect → Show risk → Mask → Send protected text
+
+No real Aadhaar, PAN, passwords, API keys, or other sensitive personal information should be used during demonstrations.
+
+Demo Video
+
